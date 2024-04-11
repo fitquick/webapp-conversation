@@ -1,5 +1,9 @@
 import type { AppInfo } from '@/types/app'
 
+if (!process.env.APP_ID || !process.env.API_KEY || !process.env.API_URL) {
+  throw new Error('Please set APP_ID, API_KEY, and API_URL environment variables.')
+}
+
 export const APP_ID = process.env.APP_ID
 export const API_KEY = process.env.API_KEY
 export const API_URL = process.env.API_URL
