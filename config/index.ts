@@ -10,8 +10,8 @@ export const APP_INFO: AppInfo = {
   default_language: 'ja',
 }
 
-export const isShowPrompt = false
-export const promptTemplate = 'I want you to act as a javascript console.'
+export const isShowPrompt = true
+export const promptTemplate = 'あなたは優秀なアシスタントです。'
 
 export const API_PREFIX = '/api'
 
